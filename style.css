@@ -275,6 +275,13 @@ h1 span:nth-child(11) { animation-delay:6s; }
   color: #ddd;
   font-family: "poppins", sans-serif;
 }
+.Empresas_container {
+  display: contents; /* Organiza as listas horizontalmente */
+  justify-content: space-around; /* Espaço entre as listas */
+  align-items: flex-start; /* Alinha as listas ao topo */
+  width: 100%; /* Controla a largura do container */
+  max-width: 1200px; /* Limita a largura máxima */
+}
 
 .metallic-line {
   position: absolute;
@@ -313,20 +320,14 @@ h1 span:nth-child(11) { animation-delay:6s; }
   }
 }
 
-.container {
-  display: flex; /* Organiza as listas horizontalmente */
-  justify-content: space-around; /* Espaço entre as listas */
-  align-items: flex-start; /* Alinha as listas ao topo */
-  width: 100%; /* Controla a largura do container */
-  max-width: 1200px; /* Limita a largura máxima */
-}
+
 
 .list_Ecotec, .list_Comin, .list_Cardan {
   display: flex;
   flex-direction: column; /* Organiza os itens de cada lista em coluna */
   align-items: center; /* Centraliza os itens horizontalmente */
   justify-content: flex-start; /* Garante que o conteúdo fique no topo */
-  margin: 0 10px; /* Espaço entre as listas */
+  margin: 0; /* Espaço entre as listas */
   text-align: center;
   color: #fff;
   font-family: "poppins", sans-serif;
@@ -469,3 +470,43 @@ li {
     flex-direction: row;
     gap: 4rem;
   }}
+
+  /* Estilo do rodapé */
+.footer {
+  background-color: #161616;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Estilo do conteúdo do rodapé */
+.footer-content {
+  margin-bottom: 10px;
+}
+
+.footer-content h3 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+/* Links sociais */
+.footer-social a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-social a:hover {
+  text-decoration: underline;
+}
+
+.linkedin{
+  width: 30px; 
+  height: 30px; 
+  vertical-align: middle; 
+  margin-right: 5px; 
+  background-color: transparent;
+}
